@@ -1,0 +1,65 @@
+/* styles.css */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  font-family: "Poppins", sans-serif;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+@layer components {
+  .max-container {
+    max-width: 1536px;
+    margin: 0 auto;
+    padding-inline: min(7vw, 1rem);
+  }
+  .header-gradient {
+    background: linear-gradient(
+        245deg,
+        #fcb564 0.67%,
+        rgba(251, 111, 255, 0) 30.1%
+      ),
+      linear-gradient(67deg, #706ceb 0.07%, #706ceb 82.88%);
+  }
+  .bgTransparent {
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+
+    backdrop-filter: blur(30px);
+  }
+  .flexItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hidden {
+    display: none;
+  }
+}
+
+/* 
+.space-grotesk- {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 
+  font-style: normal;
+}
+  
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}*/
