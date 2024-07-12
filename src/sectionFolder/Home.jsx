@@ -9,10 +9,10 @@ const Home = () => {
     visible: { opacity: 1, y: 0, skewX: 0, skewY: 0 },
   };
   return (
-    <header className="max-container flex flex-col items-center justify-center ">
+    <header className="max-container max-sm:px-2 flex flex-col items-center justify-center ">
       <div
         className=" w-full relative text-white  header-gradient 
-      h-[90vh]   rounded-[24px] px-6  "
+      h-[90vh]   rounded-[24px] max-sm:rounded-lg px-6  "
       >
         <div className="flex flex-col items-center text-center">
           <motion.h1
@@ -20,7 +20,7 @@ const Home = () => {
             animate="visible"
             variants={textVariants}
             transition={{ duration: 1 }}
-            className="font-fontSpace  text-6xl font-bold max-w-[986px] mt-14 max-lg:text-5xl max-sm:max-w-[339px]"
+            className="font-fontSpace px-3 text-6xl font-bold max-lg:w-[766px] mt-14 max-lg:text-5xl max-sm:max-w-[339px]"
           >
             Online video conferencing software from Vidgo
           </motion.h1>
@@ -37,7 +37,7 @@ const Home = () => {
             connect with others and stay productive while working remotely.
           </motion.p>
         </div>
-        <div className="flex gap-6 max-sm:flex-col max-sm:w-full items-center justify-center mt-9 mb-14 max-sm:mb-6 ">
+        <div className="flex gap-6 max-md:gap-3 max-sm:flex-col max-sm:w-full items-center justify-center mt-9 mb-7 max-sm:mb-6 ">
           <motion.button
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -46,10 +46,10 @@ const Home = () => {
               delay: 0.5,
             }}
             label=""
-            className="text-bgAccent bg-white
-          min-w-[201px] px-7 py-5 max-sm:w-full flexItem rounded-xl"
+            className="text-bgAccent  bg-white
+          min-w-[201px] px-7 py-5 max-sm:w-full flexItem rounded-lg"
           >
-            <p>Let’s get started</p>
+            <p className="max-sm:buttonText">Let’s get started</p>
           </motion.button>
 
           <motion.button
@@ -60,7 +60,7 @@ const Home = () => {
               delay: 0.5,
             }}
             className="text-white bg-bgContrast px-7 py-5
-          min-w-[201px] max-sm:w-full flexItem rounded-xl "
+          min-w-[201px] max-sm:w-full flexItem rounded-lg "
           >
             <img src={playBtn} alt="Play Button Icon" />
             <p className="pl-2">Watch the Video</p>

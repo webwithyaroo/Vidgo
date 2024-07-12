@@ -33,17 +33,16 @@ const Nav = () => {
         stiffness: 100,
       }}
       variants={navMotions}
-      className="  max-container flex justify-between items-center h-[92px] px-9 "
+      className=" sticky top-0  z-10  max-container flex justify-between items-center h-[92px] max-sm:h-[60px] px-9 max-[600px]:px-2.5 bg-white"
     >
       <div>
         <img src={logo} width={124} alt="logo" />
       </div>
       <ul
         className={` max-[800px]:navigationLink transform 
-          max-[800px]:translate-x-[100%]
-       transition  duration-100 ease-in-out flex gap-3 text-sm ${
-         opened && "max-[800px]:translate-x-[0%]"
-       }`}
+       
+       transition  duration-100 ease-in-out flex gap-3 text-sm 
+       ${!opened && "max-[800px]:translate-x-[100%]"}`}
       >
         {/* :hidden */}
         {navLinks.map((link, index) => (
@@ -61,19 +60,19 @@ const Nav = () => {
           </li>
         ))}
       </ul>
-      <Buttons className="bg-bgAccent px-5 py-4 text-white max-[800px]:hidden">
+      <Buttons className="bg-bgAccent px-5 py-3 text-white max-[800px]:hidden">
         Create account
       </Buttons>
       <div
-        className="bg-bgAccent p-4  rounded-md  min-[800px]:hidden cursor-pointer"
+        className="bg-bgAccent p-3 relative z-50 rounded-md  min-[800px]:hidden cursor-pointer"
         onClick={handleToggle}
       >
         <img
           src={!opened ? menuBar : times}
           alt="menu"
-          width={24}
-          height={24}
-          className="text-blue-600"
+          width={20}
+          height={20}
+          className=" relative z-50"
         />
       </div>
     </motion.nav>
