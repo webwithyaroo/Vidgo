@@ -33,9 +33,8 @@ const Home = () => {
             }}
             className="max-w-[686px] text-sm mt-4"
           >
-            l;jjpfgjljlsk Vidgo Meeting is an online collaboration platform that
-            helps people connect with others and stay productive while working
-            remotely.
+            Vidgo Meeting is an online collaboration platform that helps people
+            connect with others and stay productive while working remotely.
           </motion.p>
         </div>
         <div className="flex gap-6 max-sm:flex-col max-sm:w-full items-center justify-center mt-9 mb-14 max-sm:mb-6 ">

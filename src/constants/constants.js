@@ -9,7 +9,8 @@ import banner from "../assets/images/banner.png";
 import menuBar from "../assets/images/List.png";
 import logo from "../assets/images/logo.svg";
 import playBtn from "../assets/images/playButton.svg";
-export { banner, menuBar, logo, playBtn };
+import times from "../assets/images/times.png";
+export { banner, menuBar, logo, playBtn, times };
 //   export const shoes = [
 //     {
 //       thumbnail: thumbnailShoe1,
