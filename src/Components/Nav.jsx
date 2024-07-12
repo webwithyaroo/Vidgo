@@ -1,7 +1,6 @@
 import { navLinks } from "../constants/constants";
 import { menuBar, logo } from "../constants/constants";
 import Buttons from "./Buttons";
-<<<<<<< HEAD
 import { motion } from "framer-motion";
 
 const Nav = () => {
@@ -24,13 +23,6 @@ const Nav = () => {
       variants={navMotions}
       className="  max-container flex justify-between items-center h-[92px] px-9 "
     >
-=======
-import { useState } from "react";
-
-const Nav = () => {
-  return (
-    <nav className="  max-container flex justify-between items-center h-[92px] px-9 ">
->>>>>>> d329c24c2a40a12aad7f06d783adc176397dc3f9
       <div>
         <img src={logo} width={124} alt="logo" />
       </div>
@@ -41,7 +33,6 @@ const Nav = () => {
           </li>
         ))}
       </ul>
-<<<<<<< HEAD
       <Buttons className="bg-bgAccent px-5 py-4 text-white max-md:hidden">
         Create account
       </Buttons>
@@ -49,16 +40,6 @@ const Nav = () => {
         <img src={menuBar} alt="menu" />
       </div>
     </motion.nav>
-=======
-      <Buttons
-        label="Create account"
-        className="bg-bgAccent px-5 py-4 text-white max-md:hidden"
-      />
-      <div className="bg-bgAccent p-4  rounded-md  md:hidden">
-        <img src={menuBar} alt="menu" />
-      </div>
-    </nav>
->>>>>>> d329c24c2a40a12aad7f06d783adc176397dc3f9
   );
 };
 
