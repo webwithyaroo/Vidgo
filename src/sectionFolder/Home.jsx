@@ -20,16 +20,17 @@ const Home = () => {
             animate="visible"
             variants={textVariants}
             transition={{ duration: 1 }}
-            className="font-fontSpace px-3 text-6xl font-bold max-lg:w-[766px] mt-14 max-lg:text-5xl max-sm:max-w-[339px]"
+            className="font-fontSpace px-3 text-6xl font-bold  mt-14 max-lg:text-5xl sm:max-w-[60vw]"
           >
-            Online video conferencing software from Vidgo
+            Online video conferencing <br />
+            software from Vidgo
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
-              duration: 1,
-              delay: 0.5,
+              duration: 0.5,
+              delay: 1,
             }}
             className="max-w-[686px] text-sm mt-4"
           >
@@ -80,7 +81,7 @@ const Home = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{
               duration: 1,
-              delay: 0.5,
+              delay: 1,
               type: "spring", // Use spring animation
               damping: 5, // Controls bounciness
               stiffness: 100, // Controls stiffness

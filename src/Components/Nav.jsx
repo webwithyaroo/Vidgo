@@ -60,7 +60,10 @@ const Nav = () => {
           </li>
         ))}
       </ul>
-      <Buttons className="bg-bgAccent px-5 py-3 text-white max-[800px]:hidden">
+      <Buttons
+        className="bg-bgAccent px-5 py-3
+       text-white max-[800px]:hidden"
+      >
         Create account
       </Buttons>
       <div

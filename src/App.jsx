@@ -1,12 +1,13 @@
 import Home from "./sectionFolder/Home";
 import Nav from "./Components/Nav";
+import FeaturesSection from "./Components/FeaturesSection";
 
 function App() {
   return (
     <>
       <Nav />
       <Home />
-      <div>navSection</div>
+      <FeaturesSection />
       <div>navSection</div>
     </>
   );

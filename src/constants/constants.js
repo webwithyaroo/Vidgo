@@ -10,7 +10,25 @@ import menuBar from "../assets/images/List.png";
 import logo from "../assets/images/logo.svg";
 import playBtn from "../assets/images/playButton.svg";
 import times from "../assets/images/times.png";
-export { banner, menuBar, logo, playBtn, times };
+import ArrowRight from "../assets/images/Arrow.svg";
+import ArrowLeft from "../assets/images/ArrowLeft.svg";
+import cardOne from "../assets/images/cardOne.svg";
+import cardTwo from "../assets/images/cardTwo.svg";
+import cardThree from "../assets/images/cardThree.svg";
+import cardFour from "../assets/images/cardFour.svg";
+export {
+  banner,
+  menuBar,
+  logo,
+  playBtn,
+  times,
+  ArrowLeft,
+  ArrowRight,
+  cardFour,
+  cardOne,
+  cardThree,
+  cardTwo,
+};
 //   export const shoes = [
 //     {
 //       thumbnail: thumbnailShoe1,
