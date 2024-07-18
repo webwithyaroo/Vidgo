@@ -14,6 +14,8 @@ export default {
         sm: "1rem", //16px
         " base": "1.125rem", //18 px
         lg: "1.75rem", //28 px
+        "2xl": "2.125rem", //38 px
+        "3xl": "2.375rem", //38 px
         "4xl": "2.5rem", //40 px
         "5xl": "2.875rem", //46 px
         "6xl": ["4.125rem", "1"], //66 px

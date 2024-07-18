@@ -1,12 +1,18 @@
-import { ArrowLeft, ArrowRight } from "../constants/constants";
-import Icon from "../Components/Icon";
-import Card from "./Card";
-import { cardOne, cardTwo, cardFour, cardThree } from "../constants/constants";
+import {
+  ArrowLeft,
+  ArrowRight,
+  Card,
+  Icon,
+  cardFour,
+  cardThree,
+} from "../constants/constants";
+
+import {} from "../constants/constants";
 const FeaturesSection = () => {
   return (
     <section className="min-h-[100vh] lg:mt-[60vh] mt-[45vh] max-sm:mt-[30vh] max-wrapper">
-      <div className="flex justify-between">
-        <h1 className="font-fontSpace lg:text-5xl text-4xl max-sm:text-3xl ">
+      <div className="flex justify-between mb-9">
+        <h1 className="font-fontSpace bolder lg:text-5xl text-4xl max-sm:text-3xl text-bgAccent ">
           Highlights of the tool
         </h1>
         <div className="flex gap-2">
@@ -22,13 +28,13 @@ const FeaturesSection = () => {
           />
         </div>
       </div>
-      <div className=" cardGrid  ">
+      <div className=" cardGrid gap-4  ">
         <Card
           text={
             "Join or launch meetings and webinars right from your browser, on any device."
           }
           largeText={"No downloads"}
-          IconUrl={cardOne}
+          IconUrl={cardFour}
           className="gridCard  "
         />
         <Card
@@ -36,7 +42,7 @@ const FeaturesSection = () => {
             "Review the meetings or webinars you attend through the recordings..."
           }
           largeText={"Recording"}
-          IconUrl={cardTwo}
+          IconUrl={cardThree}
           className="gridCard "
         />
         <Card

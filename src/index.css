@@ -18,7 +18,12 @@ img {
     padding-inline: min(7vw, 1rem);
   }
   .max-wrapper {
-    max-width: 1387px;
+    max-width: 1080px;
+    margin-inline: auto;
+    padding-left: min(7vw, 1rem);
+  }
+  .wrapper {
+    max-width: 1080px;
     margin-inline: auto;
     padding-inline: min(7vw, 1rem);
   }
@@ -33,13 +38,14 @@ img {
   .cardGrid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    overflow-x: hidden;
-    border: red 5px solid;
-    justify-content: space-between;
+    overflow-x: auto;
   }
+  /* .cardGrid:-webkit-scroll-bar {
+    display: none;
+  } */
   .gridCard {
     scroll-snap-align: start;
-    min-width: 250px;
+    min-width: 220px;
   }
   .bgTransparent {
     background: linear-gradient(
@@ -82,6 +88,14 @@ img {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+  .bolder {
+    font-style: normal;
+    font-weight: 700;
+  }
+  p,
+  li {
+    color: #707070;
   }
 }
 

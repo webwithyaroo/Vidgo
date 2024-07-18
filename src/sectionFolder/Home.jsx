@@ -32,7 +32,7 @@ const Home = () => {
               duration: 0.5,
               delay: 1,
             }}
-            className="max-w-[686px] text-sm mt-4"
+            className="max-w-[686px] text-sm mt-4 text-white"
           >
             Vidgo Meeting is an online collaboration platform that helps people
             connect with others and stay productive while working remotely.
@@ -64,7 +64,7 @@ const Home = () => {
           min-w-[201px] max-sm:w-full flexItem rounded-lg "
           >
             <img src={playBtn} alt="Play Button Icon" />
-            <p className="pl-2">Watch the Video</p>
+            <p className="pl-2 text-white">Watch the Video</p>
           </motion.button>
         </div>
         <div

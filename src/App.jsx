@@ -1,6 +1,7 @@
 import Home from "./sectionFolder/Home";
 import Nav from "./Components/Nav";
-import FeaturesSection from "./Components/FeaturesSection";
+import FeaturesSection from "./sectionFolder/FeaturesSection";
+import { SecondFeatureSection } from "./sectionFolder/SecondFeatureSection";
 
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
       <Nav />
       <Home />
       <FeaturesSection />
-      <div>navSection</div>
+      <SecondFeatureSection />
     </>
   );
 }
