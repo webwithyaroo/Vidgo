@@ -4,7 +4,7 @@ const Indicators = ({ count, currIndex }) => {
       {Array.from({ length: count }).map((_, index) => (
         <div
           key={index}
-          className={`w-[78px] h-1 max-sm:block hidden rounded-full px-2 ${
+          className={`w-[38px] h-1 max-sm:block hidden rounded-full px-2 ${
             index === currIndex ? "header-gradient" : "bg-gray-300"
           }`}
         />

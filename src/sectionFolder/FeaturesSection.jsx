@@ -46,7 +46,7 @@ const FeaturesSection = () => {
   return (
     <section className="min-h-[100vh] lg:mt-[60vh] mt-[45vh] max-sm:mt-[30vh] max-wrapper">
       <div className="flex justify-between mb-9">
-        <h1 className="font-fontSpace bolder lg:text-5xl text-4xl max-sm:text-3xl text-bgAccent ">
+        <h1 className="font-fontSpace bolder lg:text-5xl text-4xl max-sm:w-[270px] text-bgAccent ">
           Highlights of the tool
         </h1>
         <div className=" gap-2 hidden sm:flex pr-2">
@@ -70,12 +70,12 @@ const FeaturesSection = () => {
           {card.map((card, index) => (
             <div
               key={index}
-              className=" transition-transform ease-out min-w-[250px] duration-500 snap-start scroll-smooth pr-2  "
+              className=" transition-transform ease-out min-w-[250px] duration-500 snap-start scroll-smooth pr-2  select-none "
             >
               <div className="bg-bgAccent pt-5 pr-5 pl-5 rounded-[10px] snap-start scroll-smooth">
                 <img src={card.IconUrl} className="w-full" />
               </div>
-              <div className="mt-9">
+              <div className="mt-9 select-none">
                 <h1 className="text-lg bold mb-5">{card.largeText}</h1>
                 <p>{card.text}</p>
               </div>

@@ -1,4 +1,3 @@
-import { useLayoutEffect } from "react";
 import Features from "../Components/Features";
 import {
   imageOne,
@@ -8,6 +7,7 @@ import {
   listThree,
   listTwo,
 } from "../constants/constants";
+import LogoCollection from "./LogoCollection";
 export const SecondFeatureSection = () => {
   return (
     <section className="wrapper">
@@ -90,6 +90,21 @@ export const SecondFeatureSection = () => {
           ))}
         </Features>
       </div>
+
+      {/* Logo Section  */}
+      <section className="flex items-center justify-between max-md:flex-col-reverse gap-10">
+        <LogoCollection />
+        <div className="max-w-[470px]">
+          <h3 className="text-bgAccent lg:text-5xl text-4xl max-sm:text-3xl leading-[58px] bolder">
+            You can integrate with your favorite tools
+          </h3>
+          <p className="mb-8 mt-4">
+            Vidgo Meeting lets you start meetings directly from Outlook,
+            Salesforce, Slack or any other app that supports webhooks.
+          </p>
+          <a href="">Explore More Integrations ></a>
+        </div>
+      </section>
     </section>
   );
 };
