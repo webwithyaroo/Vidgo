@@ -1,7 +1,11 @@
-import Home from "./sectionFolder/Home";
 import Nav from "./Components/Nav";
-import FeaturesSection from "./sectionFolder/FeaturesSection";
-import { SecondFeatureSection } from "./sectionFolder/SecondFeatureSection";
+import {
+  Home,
+  FeaturesSection,
+  SecondFeatureSection,
+  Testimonials,
+  FAQ,
+} from "./constants/constants";
 
 function App() {
   return (
@@ -10,6 +14,8 @@ function App() {
       <Home />
       <FeaturesSection />
       <SecondFeatureSection />
+      <Testimonials />
+      <FAQ />
     </>
   );
 }

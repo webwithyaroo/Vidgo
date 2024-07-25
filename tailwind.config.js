@@ -7,12 +7,14 @@ export default {
       colors: {
         bgAccent: "#031639",
         bgContrast: " rgba(0, 0, 0, 0.15)",
+        fcb564: "#fcb564",
+        ff65f2: "#ff65f2",
       },
       //rgb(112, 108, 235)
       fontSize: {
         xs: "0.875rem", //14 px
         sm: "1rem", //16px
-        " base": "1.125rem", //18 px
+        base: "1.125rem", //18 px
         lg: "1.75rem", //28 px
         "2xl": "2.125rem", //38 px
         "3xl": "2.375rem", //38 px

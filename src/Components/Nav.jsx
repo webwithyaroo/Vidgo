@@ -1,14 +1,28 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { navLinks } from "../constants/constants";
 import { menuBar, logo, times } from "../constants/constants";
 import Buttons from "./Buttons";
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 
 const Nav = () => {
-  const navMotions = {
-    hidden: { opacity: 0, y: -20 },
-    visible: { opacity: 1, y: 0 },
+  const controls = useAnimation();
+  const [prevScrollY, setPrevScrollY] = useState(0);
+  const handleScroll = () => {
+    const currentScrollY = window.scrollY;
+    if (currentScrollY > prevScrollY) {
+      controls.start({ y: "-100%" }); // Hide navbar
+    } else {
+      controls.start({ y: "0%" }); // Show navbar
+    }
+    setPrevScrollY(currentScrollY);
   };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [prevScrollY]);
 
   const [isClicked, setIsClicked] = useState(0);
   const handleClick = (index) => {
@@ -19,21 +33,13 @@ const Nav = () => {
   const [opened, setOpened] = useState(false);
   const handleToggle = () => {
     setOpened(!opened);
-    console.log(opened);
   };
   return (
     <motion.nav
-      initial="hidden"
-      animate="visible"
-      transition={{
-        delay: 0.5,
-        duration: 0.2,
-        type: "spring",
-        damping: 5,
-        stiffness: 100,
-      }}
-      variants={navMotions}
-      className=" sticky top-0  z-10  max-container flex justify-between items-center h-[92px] max-sm:h-[60px] px-9 max-[600px]:px-2.5 bg-white"
+      initial={{ y: "0%" }}
+      animate={controls}
+      transition={{ type: "spring", stiffness: 300 }}
+      className=" fixed top-0 left-0 right-0 z-10  max-container flex justify-between items-center h-[92px] max-sm:h-[60px] px-9 max-[600px]:px-2.5 bg-white"
     >
       <div>
         <img src={logo} width={124} alt="logo" />

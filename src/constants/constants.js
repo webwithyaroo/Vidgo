@@ -9,7 +9,7 @@ import banner from "../assets/images/banner.png";
 import menuBar from "../assets/images/List.png";
 import logo from "../assets/images/logo.svg";
 import playBtn from "../assets/images/playButton.svg";
-import times from "../assets/images/times.png";
+import times from "../assets/images/cross.png";
 import ArrowRight from "../assets/images/Arrow.svg";
 import ArrowLeft from "../assets/images/ArrowLeft.svg";
 import cardOne from "../assets/images/cardOne.svg";
@@ -17,7 +17,7 @@ import cardTwo from "../assets/images/cardTwo.svg";
 import cardThree from "../assets/images/cardThree.svg";
 import cardFour from "../assets/images/cardFour.svg";
 import imageOne from "../assets/images/featureOne.jpg";
-import imageTwo from "../assets/images/featureTwo.jpg";
+import imageTwo from "../assets/images/featureTwo.png";
 import imageThree from "../assets/images/featureThree.png";
 import bagIcon from "../assets/images/bagIcon.png";
 import cloudRec from "../assets/images/cloudRec.png";
@@ -27,7 +27,9 @@ import meetIcon from "../assets/images/meetIcon.png";
 import shareIcon from "../assets/images/shareIcon.png";
 import teleCast from "../assets/images/teleCast.png";
 
+import plus from "../assets/images/plus.png";
 export {
+  plus,
   bagIcon,
   cloudRec,
   group,
@@ -133,6 +135,93 @@ export const card = [
   },
 ];
 
+// Section Imports
+import Home from "../sectionFolder/Home";
+import FeaturesSection from "../sectionFolder/FeaturesSection";
+import Testimonials from "../sectionFolder/Testimonials";
+import SecondFeatureSection from "../sectionFolder/SecondFeatureSection";
+import FAQ from "../sectionFolder/FAQ";
+export { Home, FeaturesSection, SecondFeatureSection, Testimonials, FAQ };
+
+//Testimonial lists
+import image1 from "../assets/images/image1.png";
+import image2 from "../assets/images/image2.png";
+import image3 from "../assets/images/image3.png";
+import image4 from "../assets/images/image4.png";
+import image5 from "../assets/images/image5.png";
+import image6 from "../assets/images/image6.png";
+import image7 from "../assets/images/image7.png";
+import image8 from "../assets/images/image8.png";
+
+export const testimonialLists = [
+  {
+    img: image1,
+    name: "Julian Wan",
+    handle: "@Julian",
+    text: " We have used this tool for our Market integration as [an] Event Partner. Our client hosts all the events on the Vidgo platform and it sends the event ...",
+  },
+  {
+    img: image2,
+    name: "Chanvre Québec",
+    handle: "@Chanvre",
+    text: " We mostly recommend Vidgo because of the integration with various marketing automation tools. That makes life easy for the marketer to get the webinar data very...",
+  },
+  {
+    img: image3,
+    name: "Ian dooley",
+    handle: "@Ian dooley",
+    text: " Vidgo is being used as an  essential tool in the last 4 years for the company. We use it for all departments  helped us to create more engagement with our clients....",
+  },
+  {
+    img: image4,
+    name: "Joseph Gonzalez",
+    handle: "@Gonzalez",
+    text: " We've used Vidgo for a number of years to help us with our webinar needs. We've run everything from small, 20 person internal team webinars, to upwards of 1,000 people....",
+  },
+  {
+    img: image5,
+    name: "Rayul",
+    handle: "@rayul",
+    text: " Our association uses for almost all our online webinars, which can be between 2-5 per month. Most of the programs are generated in the U.S., but we also us...",
+  },
+  {
+    img: image6,
+    name: "Cibelly Roberta",
+    handle: "@roberta",
+    text: " Vidgo is used by HR for announcements when they roll out new policies or need to engage the wider firm i.e quarterly CEO to connect where CEO shares.....",
+  },
+  {
+    img: image7,
+    name: "Dave Nash",
+    handle: "@dave Nash",
+    text: " Our Marketing department, Product Management, and Sales department use Vidgo to present to our customers and prospects every month about our new and existing...",
+  },
+  {
+    img: image8,
+    name: "Charlie Green",
+    handle: "@charlie Green",
+    text: " Vidgo is one of the many platforms I have used throughout many contracts with different healthcare organizations. ....",
+  },
+];
+
+export const questions = [
+  {
+    title: "Do you need an account to use Vidgo?",
+    text: "A Vidgo account is not required if you are strictly joining Vidgo Meetings as a participant. If someone invites you to their meeting, you can join as a participant without creating an account.",
+  },
+  {
+    title: "How do I sign up for Vidgo?",
+    text: "A Vidgo account is not required if you are strictly joining Vidgo Meetings as a participant. If someone invites you to their meeting, you can join as a participant without creating an account.",
+  },
+  {
+    title: "How do I join computer/device audio?",
+    text: "A Vidgo account is not required if you are strictly joining Vidgo Meetings as a participant. If someone invites you to their meeting, you can join as a participant without creating an account.",
+  },
+  {
+    title: "How much does Vidgo cost?",
+    text: "A Vidgo account is not required if you are strictly joining Vidgo Meetings as a participant. If someone invites you to their meeting, you can join as a participant without creating an account.",
+  },
+];
 //   export const footerLinks = [
 //     {
 //       title: "Products",
