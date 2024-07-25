@@ -197,7 +197,7 @@ const SecondFeatureSection = () => {
             }}
             href=""
           >
-            Explore More Integrations >
+            Explore More Integrations
           </motion.a>
         </div>
       </section>
