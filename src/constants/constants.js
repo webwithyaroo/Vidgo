@@ -8,6 +8,7 @@ export const navLinks = [
 import banner from "../assets/images/banner.png";
 import menuBar from "../assets/images/List.png";
 import logo from "../assets/images/logo.svg";
+import logo2 from "../assets/images/Logo.png";
 import playBtn from "../assets/images/playButton.svg";
 import times from "../assets/images/cross.png";
 import ArrowRight from "../assets/images/Arrow.svg";
@@ -28,7 +29,17 @@ import shareIcon from "../assets/images/shareIcon.png";
 import teleCast from "../assets/images/teleCast.png";
 
 import plus from "../assets/images/plus.png";
+import facebook from "../assets/images/facebook.png";
+import twitter from "../assets/images/twitter.png";
+import linkedIn from "../assets/images/linkedIn.png";
+import appStore from "../assets/images/appStore.svg";
+import playStore from "../assets/images/playStore.svg";
 export {
+  appStore,
+  playStore,
+  linkedIn,
+  facebook,
+  twitter,
   plus,
   bagIcon,
   cloudRec,
@@ -40,6 +51,7 @@ export {
   banner,
   menuBar,
   logo,
+  logo2,
   playBtn,
   times,
   ArrowLeft,
@@ -141,7 +153,15 @@ import FeaturesSection from "../sectionFolder/FeaturesSection";
 import Testimonials from "../sectionFolder/Testimonials";
 import SecondFeatureSection from "../sectionFolder/SecondFeatureSection";
 import FAQ from "../sectionFolder/FAQ";
-export { Home, FeaturesSection, SecondFeatureSection, Testimonials, FAQ };
+import Footer from "../sectionFolder/Footer";
+export {
+  Home,
+  FeaturesSection,
+  SecondFeatureSection,
+  Testimonials,
+  FAQ,
+  Footer,
+};
 
 //Testimonial lists
 import image1 from "../assets/images/image1.png";
@@ -222,12 +242,44 @@ export const questions = [
     text: "A Vidgo account is not required if you are strictly joining Vidgo Meetings as a participant. If someone invites you to their meeting, you can join as a participant without creating an account.",
   },
 ];
-//   export const footerLinks = [
-//     {
-//       title: "Products",
-//       links: [
-//         { name: "Air Force 1", link: "/" },
-//         { name: "Air Max 1", link: "/" },
-//         { name: "Air Jordan 1", link: "/" },
-//         { name: "Air Force 2", link: "/" },
-//         { name: "Nike Waffle Racer", link: "/" },
+export const footerLinks = [
+  [
+    {
+      title: "COMPANY",
+      links: [
+        { name: "About Us", link: "/" },
+        { name: "Blog", link: "/" },
+        { name: "Careers", link: "/" },
+        { name: "Contact Us", link: "/" },
+      ],
+    },
+    {
+      title: "RESOURCES",
+      links: [
+        { name: "Resource Center", link: "/" },
+        { name: "Integrations", link: "/" },
+        { name: "Partners", link: "/" },
+        { name: "Glossary", link: "/" },
+      ],
+    },
+  ],
+  [
+    {
+      title: "PRODUCTS",
+      links: [
+        { name: "Vidgo Connect", link: "/" },
+        { name: "Vidgo Contact", link: "/" },
+        { name: "Vidgo Meeting", link: "/" },
+      ],
+    },
+    {
+      title: "Remote Access",
+      links: [
+        { name: "Vidgo Resolve", link: "/" },
+        { name: "Rescue", link: "/" },
+        { name: "Central", link: "/" },
+        { name: "VidgoAssist", link: "/" },
+      ],
+    },
+  ],
+];

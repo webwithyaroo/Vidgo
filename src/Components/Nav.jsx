@@ -10,7 +10,7 @@ const Nav = () => {
   const handleScroll = () => {
     const currentScrollY = window.scrollY;
     if (currentScrollY > prevScrollY) {
-      controls.start({ y: "-100%" }); // Hide navbar
+      controls.start({ y: "-200%" }); // Hide navbar
     } else {
       controls.start({ y: "0%" }); // Show navbar
     }
@@ -38,8 +38,8 @@ const Nav = () => {
     <motion.nav
       initial={{ y: "0%" }}
       animate={controls}
-      transition={{ type: "spring", stiffness: 300 }}
-      className=" fixed top-0 left-0 right-0 z-10  max-container flex justify-between items-center h-[92px] max-sm:h-[60px] px-9 max-[600px]:px-2.5 bg-white"
+      transition={{ type: "linear", duration: 0.1 }}
+      className=" fixed top-0 mt-3 left-0 right-0 z-10  max-container flex justify-between items-center  px-9 max-[600px]:px-2.5 bg-white"
     >
       <div>
         <img src={logo} width={124} alt="logo" />

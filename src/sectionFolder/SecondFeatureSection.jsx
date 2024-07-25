@@ -39,7 +39,7 @@ const SecondFeatureSection = () => {
 
   return (
     <section className="wrapper">
-      <div className="text-center ring-2  mx-auto leading-10 ">
+      <div className="text-center  mx-auto leading-10 ">
         <h1 className="lg:text-5xl bolder font-fontSpace text-4xl max-sm:text-3xl text-bgAccent">
           Run the excellent video meeting
         </h1>

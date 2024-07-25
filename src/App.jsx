@@ -5,6 +5,7 @@ import {
   SecondFeatureSection,
   Testimonials,
   FAQ,
+  Footer,
 } from "./constants/constants";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <SecondFeatureSection />
       <Testimonials />
       <FAQ />
+      <Footer />
     </>
   );
 }

@@ -26,7 +26,7 @@ const Home = () => {
       0.66, 0.68, 0.7, 0.74, 0.76, 0.78, 0.8, 0.9, 1,
     ],
     [
-      "100%",
+      "",
       "40%",
       "400px",
       "200px",
@@ -48,7 +48,7 @@ const Home = () => {
       "30px",
       "300px",
       "30px",
-      "30px",
+      "300px",
     ]
   );
   const height = useTransform(
@@ -80,7 +80,7 @@ const Home = () => {
       "70px",
       "170px",
       "70px",
-      "70px",
+      "170px",
     ]
   );
   const translateY = useTransform(scrollYProgress, [0.4, 1], ["0", "320%"]);
@@ -100,8 +100,8 @@ const Home = () => {
       "-60deg",
       "60deg",
       "-60deg",
-      "0",
-      "0",
+      "60deg",
+      "-60deg",
     ]
   );
   const bgColor = useTransform(
@@ -122,7 +122,7 @@ const Home = () => {
   // const enlarge = useTransform(scrollYProgress, [0, 0.2, 1], [1, 1, 2]);
 
   return (
-    <header className="max-container max-sm:px-2 flex flex-col items-center justify-center">
+    <header className=" max-sm:px-2 flex max-container  flex-col items-center  justify-center">
       <motion.div
         style={{
           width: scaleX,
@@ -135,7 +135,7 @@ const Home = () => {
           translateY,
         }}
         className="w-[95%] max-container  text-white 
-      h-[70vh]  fixed top-[95px] rounded-[24px] max-sm:rounded-lg -z-10  "
+      h-[70vh]  fixed top-[75px] rounded-[24px] max-sm:rounded-lg -z-10  "
       >
         <div className="flex flex-col items-center text-center">
           <motion.h1
