@@ -7,7 +7,9 @@ import {
   listThree,
   listTwo,
 } from "../constants/constants";
-import LogoCollection from "./LogoCollection";
+
+import React, { Suspense } from "react";
+const LogoCollection = React.lazy(() => import("./LogoCollection"));
 import { motion } from "framer-motion";
 const SecondFeatureSection = () => {
   const fadeInAnimation = {
@@ -158,7 +160,9 @@ const SecondFeatureSection = () => {
 
       {/* Logo Section  */}
       <section className="flex items-center justify-between max-md:flex-col-reverse gap-10">
-        <LogoCollection />
+        <Suspense fallback={<div>Loading...</div>}>
+          <LogoCollection />
+        </Suspense>
         <div className="max-w-[470px]">
           <motion.h3
             initial={{ opacity: 0, x: 100 }}

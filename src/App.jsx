@@ -10,7 +10,7 @@ import {
 
 function App() {
   return (
-    <>
+    <section className="overflow-x-hidden">
       <Nav />
       <Home />
       <FeaturesSection />
@@ -18,7 +18,7 @@ function App() {
       <Testimonials />
       <FAQ />
       <Footer />
-    </>
+    </section>
   );
 }
 

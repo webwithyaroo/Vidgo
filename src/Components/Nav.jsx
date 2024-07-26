@@ -39,7 +39,7 @@ const Nav = () => {
       initial={{ y: "0%" }}
       animate={controls}
       transition={{ type: "linear", duration: 0.1 }}
-      className=" fixed top-0 mt-3 left-0 right-0 z-10  max-container flex justify-between items-center  px-9 max-[600px]:px-2.5 bg-white"
+      className=" fixed top-0 py-3 left-0 right-0 z-10  max-container flex justify-between items-center  px-9 max-[600px]:px-2.5 bg-white"
     >
       <div>
         <img src={logo} width={124} alt="logo" />

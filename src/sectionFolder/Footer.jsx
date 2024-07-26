@@ -33,16 +33,17 @@ const Footer = () => {
             <p className="mt-12 mb-2 text-white">Join Our Newsletter</p>
             <form
               action="get"
-              className="bg-white p-2 max-w-fit border-none outline-none rounded-md"
+              className="bg-white p-2 max-w-fit border-none outline-none rounded-md flex"
             >
               <input
                 type="text"
                 placeholder="enter your email..."
-                className="border-none outline-none px-2"
+                className="border-none outline-none px-2
+                w-[60%]"
               />
               <button
                 type="submit"
-                className="py-3 px-5 header-gradient rounded-md text-white"
+                className="py-3 px-5 header-gradient rounded-md text-white w-[40%] text-[15px] "
               >
                 Subscribe
               </button>
